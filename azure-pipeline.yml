@@ -1,5 +1,5 @@
 variables:
-  host: 49.206.52.158
+  #host: 49.206.52.158
 
 jobs:
 - job: jmeter
