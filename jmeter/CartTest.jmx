@@ -23,7 +23,7 @@
           </elementProp>
           <elementProp name="Authorization" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
-            <stringProp name="Header.value">Bearer eyJraWQiOiJCN3RiQ1hzbUNNYnJBb0djZ1NwN19QZ2dKNGQ5UG9GejVUeGxCc2dERGhrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlB0Qnp0QTl5ZUh6TWZPakU4WmFNTjQ2QkZibHU0aGExR1dTLTR0NVNwekkiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTUwMjA5NiwiZXhwIjoxNjIxNTg4NDk2LCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.T8fGMx-ygShu70unqgpHbO2MsfwKKlCjinSvr9D1SbMPPJuoHuklPRGGxZj50MEKNH2MUIpoIPPT5yYNiIkT0sa646dlnvVHhwCyCGB3m1C73_WSKXQ1jolpwl99fwpxeKmBcDWnuJddr4L9IJ1UjSYxGDLIRGAQpTdUOn9a6BokIQI5i30SY7WUfw6uCACnKPONpL4Kkw00w8uR1mnAtlPCIHlnnGoDfLTFqa_wmDMGuH655lgD2B8kOOSC2eS8et5PkGeJkqU-JsUngtv26NjE7skp3xnjysvjoEGVXLM6APcKf-Ic2M0pVIG8g4R5HtOmexhByZNIviHuhio_6g</stringProp>
+            <stringProp name="Header.value">Bearer eyJraWQiOiJCN3RiQ1hzbUNNYnJBb0djZ1NwN19QZ2dKNGQ5UG9GejVUeGxCc2dERGhrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmVNNUd5RXJvNEdqcEs0OC1IaDZJd0MyQlQ3N3RaMElvQUZrd0M0cmY5TmMiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTU4MjUyNCwiZXhwIjoxNjIxNjY4OTI0LCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIm9wZW5pZCJdLCJzdWIiOiJrZHRlc3QxQGRocy5BbGxlZ2hlbnkuTG9jYWwiLCJhZFNhbUFjY291bnROYW1lIjoiS0RURVNUMSJ9.SjYqZqyDGwaQW4Im7kqWJBTpA3bkn21ZSghFj_eW9pfzl8Jv0Gg97UcfwVGAxndylIcQx1dPN3qU-92NXYXSJMQypHfEp9APBcYBv7A4KXYOYjrvxTa9Epbv4yPwt5sg7_zGuv3I8KDL4-V2zsBhCGKH6n468Rne0BlYGOSzPWh0on5dnooTf-QGPzPyLtYc_-LQkJ0jOhTk_8j-xz191KQwvys1IjNQ3svuG2QLFT1H5H9MS5WgovxuYWPxksRGRW5r83H8a3lkbv09IislquE080PSvf5oCrHFIac4fdOmP1lampUuFzDT1VCJ7HjBdtWoqACmXr0R3R_BCE4qkQ</stringProp>
           </elementProp>
           <elementProp name="Content-Type" elementType="Header">
             <stringProp name="Header.name">Content-Type</stringProp>
@@ -111,7 +111,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
         <stringProp name="ThreadGroup.ramp_time">240</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
@@ -226,7 +226,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
         <stringProp name="ThreadGroup.ramp_time">240</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
@@ -275,7 +275,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
         <stringProp name="ThreadGroup.ramp_time">240</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
@@ -483,7 +483,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
         <stringProp name="ThreadGroup.ramp_time">240</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
@@ -693,7 +693,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">4</stringProp>
+        <stringProp name="ThreadGroup.num_threads">8</stringProp>
         <stringProp name="ThreadGroup.ramp_time">240</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
