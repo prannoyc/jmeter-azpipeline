@@ -1,5 +1,5 @@
 variables:
-  host: 49.206.52.158
+  #host: 49.206.52.158
 
 jobs:
 - job: jmeter
@@ -12,11 +12,11 @@ jobs:
     inputs:
       targetType: filePath
       filePath: 'jmeter/test.sh'
-      arguments: '$PWD CartTest.jmx $(host)'
+      arguments: '$PWD CartTest.jmx'
       workingDirectory: jmeter
       failOnStderr: true
-  - task: PublishPipelineArtifact@1
-    displayName: Publish JMeter Report
-    inputs:
-      targetPath: jmeter/report
-      artifact: jmeter
+  #- task: PublishPipelineArtifact@1
+  #  displayName: Publish JMeter Report
+  #  inputs:
+   #   targetPath: jmeter/report
+    #  artifact: jmeter
