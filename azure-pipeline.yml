@@ -1,19 +1,14 @@
 jobs:
 - job: jmeter
-  vmImage: ubuntu-latest
+  pool:
+    vmImage: ubuntu-latest
   displayName: Run JMeter tests
-  
   steps:
   - task: Bash@3
     displayName: Execute JMeter tests
     inputs:
       targetType: filePath
       filePath: 'jmeter/test.sh'
-      arguments: '$PWD CartTest.jmx'
+      arguments: '$PWD CartTest.jmx $(host)'
       workingDirectory: jmeter
       failOnStderr: true
-  #- task: PublishPipelineArtifact@1
-  #  displayName: Publish JMeter Report
-  #  inputs:
-   #   targetPath: jmeter/report
-    #  artifact: jmeter
