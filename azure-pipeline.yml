@@ -1,11 +1,9 @@
-variables:
-  #host: 49.206.52.158
-
 jobs:
 - job: jmeter
   pool:
-    vmImage: ubuntu-latest
+  vmImage: ubuntu-latest
   displayName: Run JMeter tests
+  
   steps:
   - task: Bash@3
     displayName: Execute JMeter tests
