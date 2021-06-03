@@ -23,7 +23,7 @@
           </elementProp>
           <elementProp name="Authorization" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
-            <stringProp name="Header.value">Bearer eyJraWQiOiJCN3RiQ1hzbUNNYnJBb0djZ1NwN19QZ2dKNGQ5UG9GejVUeGxCc2dERGhrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmVNNUd5RXJvNEdqcEs0OC1IaDZJd0MyQlQ3N3RaMElvQUZrd0M0cmY5TmMiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTU4MjUyNCwiZXhwIjoxNjIxNjY4OTI0LCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIm9wZW5pZCJdLCJzdWIiOiJrZHRlc3QxQGRocy5BbGxlZ2hlbnkuTG9jYWwiLCJhZFNhbUFjY291bnROYW1lIjoiS0RURVNUMSJ9.SjYqZqyDGwaQW4Im7kqWJBTpA3bkn21ZSghFj_eW9pfzl8Jv0Gg97UcfwVGAxndylIcQx1dPN3qU-92NXYXSJMQypHfEp9APBcYBv7A4KXYOYjrvxTa9Epbv4yPwt5sg7_zGuv3I8KDL4-V2zsBhCGKH6n468Rne0BlYGOSzPWh0on5dnooTf-QGPzPyLtYc_-LQkJ0jOhTk_8j-xz191KQwvys1IjNQ3svuG2QLFT1H5H9MS5WgovxuYWPxksRGRW5r83H8a3lkbv09IislquE080PSvf5oCrHFIac4fdOmP1lampUuFzDT1VCJ7HjBdtWoqACmXr0R3R_BCE4qkQ</stringProp>
+            <stringProp name="Header.value">Bearer eyJraWQiOiJCN3RiQ1hzbUNNYnJBb0djZ1NwN19QZ2dKNGQ5UG9GejVUeGxCc2dERGhrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlVpX2R5R1F1U0REOTdlcmE5ZkdpYTdCOFlIbzZrb21ZcGpibkl4ZDRNRFEiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMjcxNzQ1MywiZXhwIjoxNjIyODAzODUzLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIm9wZW5pZCJdLCJzdWIiOiJrZHRlc3QxQGRocy5BbGxlZ2hlbnkuTG9jYWwiLCJhZFNhbUFjY291bnROYW1lIjoiS0RURVNUMSJ9.hK22R05iyr_ZZzQ65MSo3kczHvPP4C94mdwxwKZ9luxDOeKp9ge8YHDRK-D6fhJtRJaJIFmW5pzX3zO7TrdbS4OiG9O9ZeviINzqUKMHcX2h6T8C1EzjCtJQFLvPpNcgVr6_j8Xln0nb_soa8BrqWOwHm4BFjwZ1cFlbDzjB7YnEVuZ73Sv6CXh40Bw1DqiEnBdo8DHeuTO6-iEyRF5AWekBuLY4fPK2BTUeigx9jLBDJ6q0URddyi2ZtTeI1m0MV6tCmOktM4kdDEc_uMmVcLk4P4E1LN-kstpCjNsrpySzy5fdhU0vr5wCAlGsLw5JdqVtqy7QKDdWf63z42bJkg</stringProp>
           </elementProp>
           <elementProp name="Content-Type" elementType="Header">
             <stringProp name="Header.name">Content-Type</stringProp>
@@ -109,11 +109,11 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">8</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">240</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -220,15 +220,239 @@
           <hashTree/>
         </hashTree>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client - POST  Blank Data " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client Search -  POST " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;lastName&quot;: &quot;&quot;&#xd;
+}&#xd;
+{&#xd;
+  &quot;firstName&quot;: &quot;&quot;&#xd;
+}&#xd;
+{&#xd;
+  &quot;firstName&quot;: &quot;&quot;,&#xd;
+  &quot;lastName&quot;: &quot;&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Search Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-782015842">errorReferenceId</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Invalid parameters, Blank </stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client - POST  Speical Charac Wrong Data  " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client Search -  POST " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;mciId&quot;: &quot;1001021622&quot;&#xd;
+}&#xd;
+&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Search Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-782015842">errorReferenceId</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Errored</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client- GET " enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">8</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">240</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -269,15 +493,162 @@
           <hashTree/>
         </hashTree>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client- GET Using &lt; 10 Digits" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client Search - GET " enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/${MCI}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - residencyCode" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1518116825">residencyCode</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Did not match the residencyCode field</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client- GET Using &gt; 10 Digits" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client Search - GET " enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/100000${MCI}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - residencyCode" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1835543597">Invalid parameters</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Did not match the criteria</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Search Client- GET Blank Value or Char " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client Search - GET " enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - residencyCode" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Did not match the statusCode field</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Client - POST" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">8</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">240</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -477,15 +848,277 @@
           <hashTree/>
         </hashTree>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Client - POST Blank " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Client - POST " enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/newclient</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Create Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1835543597">Invalid parameters</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Blank Data Entered </stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create Client - POST Part JSON" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Create Client - POST Part JSON" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">  &quot;address&quot;: [&#xd;
+    {&#xd;
+      &quot;addressLine1&quot;: &quot;515 High Street HOME&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House HOME&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 1,&#xd;
+      &quot;aptNumber&quot;: &quot;101&quot;,&#xd;
+      &quot;city&quot;: &quot;Coolcity&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 5,&#xd;
+      &quot;countyCode&quot;: 7,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 8,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 19,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;12&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NDZC&quot;,&#xd;
+      &quot;countryCode&quot;: 97,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+    {&#xd;
+    &quot;addressLine1&quot;: &quot;515 High Street Mailing&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House Mailing&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 2,&#xd;
+      &quot;aptNumber&quot;: &quot;102&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;countyCode&quot;: 2,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 2,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;2&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;AZC&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;AZCE&quot;,&#xd;
+      &quot;countryCode&quot;: 37,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+   {&#xd;
+     &quot;addressLine1&quot;: &quot;515 High Street OTHERU&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House OTHERU&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 3,&#xd;
+      &quot;aptNumber&quot;: &quot;1093&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;countyCode&quot;: 3,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 3,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;3&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NYZ&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NYZE&quot;,&#xd;
+      &quot;countryCode&quot;: 90,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+}&#xd;
+    ]&#xd;
+  </stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/newclient</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Create Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1835543597">Invalid parameters</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Part Data Entered , please complete JSON Request.</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Client - POST" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">8</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">240</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -687,15 +1320,645 @@
           <hashTree/>
         </hashTree>
       </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Client - POST Wrong Data " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Client - POST Wrong Data " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;MCIId&quot;: &quot;${MCI2}&quot;,&#xd;
+  &quot;userID&quot;: &quot;KDTEST2&quot;,&#xd;
+  &quot;birthName&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_BNUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;&#xd;
+  },&#xd;
+  &quot;otherNames&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_ONUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;,&#xd;
+    &quot;dateVerified&quot;: &quot;2021-16-15T11:23:31.127Z&quot;,&#xd;
+    &quot;dateUpdated&quot;: &quot;2021-16-15T11:23:31.127Z&quot;&#xd;
+  },&#xd;
+  &quot;isHomeless&quot;: false,&#xd;
+  &quot;isUSCitizen&quot;: 4,&#xd;
+  &quot;ssnAlias&quot;: &quot;${SSN}&quot;,&#xd;
+  &quot;ethnicityCode&quot;: 8,&#xd;
+  &quot;ethnicityDesc&quot;: &quot;UPADTE API&quot;,&#xd;
+  &quot;tribeCode&quot;: 428,&#xd;
+  &quot;tribeDesc&quot;: &quot;UPDATE API&quot;,&#xd;
+  &quot;maritalStatus&quot;: 7,&#xd;
+  &quot;housingStatus&quot;: 10,&#xd;
+  &quot;genderCode&quot;: 2,&#xd;
+  &quot;address&quot;: [&#xd;
+    {&#xd;
+      &quot;addressLine1&quot;: &quot;515 High Street HOME Update&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House HOMEUpdate&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 1,&#xd;
+      &quot;aptNumber&quot;: &quot;101&quot;,&#xd;
+      &quot;city&quot;: &quot;Coolcity&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 5,&#xd;
+      &quot;countyCode&quot;: 6,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 7,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 19,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;12&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NDZC&quot;,&#xd;
+      &quot;countryCode&quot;: 97,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+    {&#xd;
+    &quot;addressLine1&quot;: &quot;515 High Street Mailing&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House Mailing&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 2,&#xd;
+      &quot;aptNumber&quot;: &quot;102&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;countyCode&quot;: 2,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 2,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;2&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;AZC&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;AZCE&quot;,&#xd;
+      &quot;countryCode&quot;: 37,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+   {&#xd;
+   	&quot;addressLine1&quot;: &quot;515 High Street OTHERU&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House OTHERU&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 3,&#xd;
+      &quot;aptNumber&quot;: &quot;1093&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;countyCode&quot;: 3,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 3,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;3&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NYZ&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NYZE&quot;,&#xd;
+      &quot;countryCode&quot;: 90,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+}&#xd;
+    ]&#xd;
+  ,&#xd;
+  &quot;contact&quot;: {&#xd;
+    &quot;homePhone&quot;: &quot;7045652304&quot;,&#xd;
+    &quot;faxNumber&quot;: &quot;7045652305&quot;,&#xd;
+    &quot;email&quot;: &quot;${Email}&quot;,&#xd;
+    &quot;workPhone&quot;: &quot;70457&quot;,&#xd;
+    &quot;workPhoneExt&quot;: &quot;70458&quot;,&#xd;
+    &quot;cellPhone&quot;: &quot;7045652306&quot;&#xd;
+  },&#xd;
+  &quot;residencyCode&quot;: 3,&#xd;
+  &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+  &quot;middleName&quot;: &quot;DUpdate&quot;,&#xd;
+  &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+  &quot;suffix&quot;: &quot;RealUpdate&quot;,&#xd;
+  &quot;ssn&quot;: &quot;${SSN}&quot;,&#xd;
+  &quot;birthDate&quot;: &quot;1990-09-28T11:23:31.129Z&quot;,&#xd;
+  &quot;raceCodes&quot;: &quot;2-,&quot;,&#xd;
+  &quot;deathDate&quot;: &quot;2019-05-09T11:23:31.129Z&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/updateclient</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Update Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-782015842">errorReferenceId</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Wrong Data Posted </stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Client - POST Data without SSN" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Client - POST Data without SSN" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;MCIId&quot;: &quot;101010101011&quot;,&#xd;
+  &quot;userID&quot;: &quot;KDTEST2&quot;,&#xd;
+  &quot;birthName&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_BNUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;&#xd;
+  },&#xd;
+  &quot;otherNames&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_ONUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;,&#xd;
+    &quot;dateVerified&quot;: &quot;2021-04-15T11:23:31.127Z&quot;,&#xd;
+    &quot;dateUpdated&quot;: &quot;2021-04-15T11:23:31.127Z&quot;&#xd;
+  },&#xd;
+  &quot;isHomeless&quot;: false,&#xd;
+  &quot;isUSCitizen&quot;: 4,&#xd;
+  &quot;ssnAlias&quot;: &quot;&quot;,&#xd;
+  &quot;ethnicityCode&quot;: 8,&#xd;
+  &quot;ethnicityDesc&quot;: &quot;UPADTE API&quot;,&#xd;
+  &quot;tribeCode&quot;: 428,&#xd;
+  &quot;tribeDesc&quot;: &quot;UPDATE API&quot;,&#xd;
+  &quot;maritalStatus&quot;: 7,&#xd;
+  &quot;housingStatus&quot;: 10,&#xd;
+  &quot;genderCode&quot;: 2,&#xd;
+  &quot;address&quot;: [&#xd;
+    {&#xd;
+      &quot;addressLine1&quot;: &quot;515 High Street HOME Update&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House HOMEUpdate&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 1,&#xd;
+      &quot;aptNumber&quot;: &quot;101&quot;,&#xd;
+      &quot;city&quot;: &quot;Coolcity&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 5,&#xd;
+      &quot;countyCode&quot;: 6,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 7,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 19,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;12&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NDZC&quot;,&#xd;
+      &quot;countryCode&quot;: 97,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+    {&#xd;
+    &quot;addressLine1&quot;: &quot;515 High Street Mailing&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House Mailing&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 2,&#xd;
+      &quot;aptNumber&quot;: &quot;102&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;countyCode&quot;: 2,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 2,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;2&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;AZC&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;AZCE&quot;,&#xd;
+      &quot;countryCode&quot;: 37,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+   {&#xd;
+   	&quot;addressLine1&quot;: &quot;515 High Street OTHERU&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House OTHERU&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 3,&#xd;
+      &quot;aptNumber&quot;: &quot;1093&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;countyCode&quot;: 3,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 3,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;3&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NYZ&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NYZE&quot;,&#xd;
+      &quot;countryCode&quot;: 90,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+}&#xd;
+    ]&#xd;
+  ,&#xd;
+  &quot;contact&quot;: {&#xd;
+    &quot;homePhone&quot;: &quot;7045652304&quot;,&#xd;
+    &quot;faxNumber&quot;: &quot;7045652305&quot;,&#xd;
+    &quot;email&quot;: &quot;${Email}&quot;,&#xd;
+    &quot;workPhone&quot;: &quot;70457&quot;,&#xd;
+    &quot;workPhoneExt&quot;: &quot;70458&quot;,&#xd;
+    &quot;cellPhone&quot;: &quot;7045652306&quot;&#xd;
+  },&#xd;
+  &quot;residencyCode&quot;: 3,&#xd;
+  &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+  &quot;middleName&quot;: &quot;DUpdate&quot;,&#xd;
+  &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+  &quot;suffix&quot;: &quot;RealUpdate&quot;,&#xd;
+  &quot;ssn&quot;: &quot;&quot;,&#xd;
+  &quot;birthDate&quot;: &quot;1990-09-28T11:23:31.129Z&quot;,&#xd;
+  &quot;raceCodes&quot;: &quot;2-,&quot;,&#xd;
+  &quot;deathDate&quot;: &quot;2019-05-09T11:23:31.129Z&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/updateclient</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Update Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-782015842">errorReferenceId</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">errorReferenceId generated </stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Update Client - Enter Char in MCI field" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Update Client - Enter Char in MCI field" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+  &quot;MCIId&quot;: &quot;$$$$$$&quot;,&#xd;
+  &quot;userID&quot;: &quot;KDTEST2&quot;,&#xd;
+  &quot;birthName&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_BNUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;&#xd;
+  },&#xd;
+  &quot;otherNames&quot;: {&#xd;
+    &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+    &quot;middleName&quot;: &quot;D_ONUpdate&quot;,&#xd;
+    &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+    &quot;suffix&quot;: &quot;MrUpdate&quot;,&#xd;
+    &quot;dateVerified&quot;: &quot;2021-04-15T11:23:31.127Z&quot;,&#xd;
+    &quot;dateUpdated&quot;: &quot;2021-04-15T11:23:31.127Z&quot;&#xd;
+  },&#xd;
+  &quot;isHomeless&quot;: false,&#xd;
+  &quot;isUSCitizen&quot;: 4,&#xd;
+  &quot;ssnAlias&quot;: &quot;${SSN}&quot;,&#xd;
+  &quot;ethnicityCode&quot;: 8,&#xd;
+  &quot;ethnicityDesc&quot;: &quot;UPADTE API&quot;,&#xd;
+  &quot;tribeCode&quot;: 428,&#xd;
+  &quot;tribeDesc&quot;: &quot;UPDATE API&quot;,&#xd;
+  &quot;maritalStatus&quot;: 7,&#xd;
+  &quot;housingStatus&quot;: 10,&#xd;
+  &quot;genderCode&quot;: 2,&#xd;
+  &quot;address&quot;: [&#xd;
+    {&#xd;
+      &quot;addressLine1&quot;: &quot;515 High Street HOME Update&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House HOMEUpdate&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 1,&#xd;
+      &quot;aptNumber&quot;: &quot;101&quot;,&#xd;
+      &quot;city&quot;: &quot;Coolcity&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 5,&#xd;
+      &quot;countyCode&quot;: 6,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 7,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 19,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;12&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NDZC&quot;,&#xd;
+      &quot;countryCode&quot;: 97,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+    {&#xd;
+    &quot;addressLine1&quot;: &quot;515 High Street Mailing&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House Mailing&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 2,&#xd;
+      &quot;aptNumber&quot;: &quot;102&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;countyCode&quot;: 2,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 2,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 2,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;2&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;AZ&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;AZC&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;AZCE&quot;,&#xd;
+      &quot;countryCode&quot;: 37,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+    },&#xd;
+   {&#xd;
+   	&quot;addressLine1&quot;: &quot;515 High Street OTHERU&quot;,&#xd;
+      &quot;addressLine2&quot;: &quot;Near Opera House OTHERU&quot;,&#xd;
+      &quot;addressTypeCode&quot;: 3,&#xd;
+      &quot;aptNumber&quot;: &quot;1093&quot;,&#xd;
+      &quot;city&quot;: &quot;Cool&quot;,&#xd;
+      &quot;cityCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;countyCode&quot;: 3,&#xd;
+      &quot;countyCouncilDistrictCode&quot;: 3,&#xd;
+      &quot;isCurrentResidence&quot;: true,&#xd;
+      &quot;isVerified&quot;: true,&#xd;
+      &quot;municipalityCode&quot;: 3,&#xd;
+      &quot;schoolDistrictCode&quot;: &quot;3&quot;,&#xd;
+      &quot;stateCode&quot;: &quot;NY&quot;,&#xd;
+      &quot;zipCode&quot;: &quot;NYZ&quot;,&#xd;
+      &quot;zipCodeExt&quot;: &quot;NYZE&quot;,&#xd;
+      &quot;countryCode&quot;: 90,&#xd;
+      &quot;startDate&quot;: &quot;2019-05-09T11:23:31.128Z&quot;&#xd;
+}&#xd;
+    ]&#xd;
+  ,&#xd;
+  &quot;contact&quot;: {&#xd;
+    &quot;homePhone&quot;: &quot;7045652304&quot;,&#xd;
+    &quot;faxNumber&quot;: &quot;7045652305&quot;,&#xd;
+    &quot;email&quot;: &quot;${Email}&quot;,&#xd;
+    &quot;workPhone&quot;: &quot;70457&quot;,&#xd;
+    &quot;workPhoneExt&quot;: &quot;70458&quot;,&#xd;
+    &quot;cellPhone&quot;: &quot;7045652306&quot;&#xd;
+  },&#xd;
+  &quot;residencyCode&quot;: 3,&#xd;
+  &quot;firstName&quot;: &quot;${FirstNameC}&quot;,&#xd;
+  &quot;middleName&quot;: &quot;DUpdate&quot;,&#xd;
+  &quot;lastName&quot;: &quot;${LastNameC}&quot;,&#xd;
+  &quot;suffix&quot;: &quot;RealUpdate&quot;,&#xd;
+  &quot;ssn&quot;: &quot;${SSN}&quot;,&#xd;
+  &quot;birthDate&quot;: &quot;1990-09-28T11:23:31.129Z&quot;,&#xd;
+  &quot;raceCodes&quot;: &quot;2-,&quot;,&#xd;
+  &quot;deathDate&quot;: &quot;2019-05-09T11:23:31.129Z&quot;&#xd;
+}&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/updateclient</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Update Client" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1835543597">Invalid parameters</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Data could not be posted without SSN	</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">8</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">240</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
         <stringProp name="ThreadGroup.delay">0</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -790,6 +2053,664 @@
               <stringProp name="48625">100</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message">Did not match Any Clearance Record </stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Blank Data " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance - POST BlankData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;firstName&quot;:&quot;&quot;,&#xd;
+   &quot;lastName&quot;:&quot;&quot;,&#xd;
+   &quot;genderCode&quot;:&quot;&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1067276613">Invalid parameters.</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Invalid parameters. founded</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Special Char " enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance - POST Special Char" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;firstName&quot;:&quot;####&quot;,&#xd;
+   &quot;lastName&quot;:&quot;$$$%&quot;,&#xd;
+   &quot;genderCode&quot;:&quot;1&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;${DOB}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49622">215</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Unsupported Media Type</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Null Birthdate" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance - POST Null Birthdate" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;firstName&quot;:&quot;${ClFirstName}&quot;,&#xd;
+   &quot;lastName&quot;:&quot;${ClLastName}&quot;,&#xd;
+   &quot;genderCode&quot;:&quot;1&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1835543597">Invalid parameters</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Invalid parameters</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Wrong  Birthdate format" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance - POST Wrong Birthdate Format" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;firstName&quot;:&quot;${ClFirstName}&quot;,&#xd;
+   &quot;lastName&quot;:&quot;${ClLastName}&quot;,&#xd;
+   &quot;genderCode&quot;:&quot;1&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;13/01/2010&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1067276613">Invalid parameters.</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">Invalid parameters.</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Only First Name or Last Name" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance - POST Only First Name or Last Name" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;firstName&quot;:&quot;${ClFirstName}&quot;,&#xd;
+   &quot;lastName&quot;:&quot;${ClLastName}&quot;,&#xd;
+   &quot;genderCode&quot;:&quot;1&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;${DOB}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="103716366">mciId</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">mciId is not found!</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="MCI Clearance - POST Only Gender &amp; DOB" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">2</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${__P(duration, 900)}</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MCI Clearance -  POST Only Gender &amp; DOB" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+   &quot;genderCode&quot;:&quot;1&quot;,&#xd;
+   &quot;birthDate&quot;:&quot;${DOB}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${Host}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">clients/api/Clients/clearance</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="false">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Ocp-Apim-Subscription-Key" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Subscription-Key</stringProp>
+                <stringProp name="Header.value">8186d227b53d463bbd57d08577084c0c</stringProp>
+              </elementProp>
+              <elementProp name="Ocp-Apim-Trace" elementType="Header">
+                <stringProp name="Header.name">Ocp-Apim-Trace</stringProp>
+                <stringProp name="Header.value">true</stringProp>
+              </elementProp>
+              <elementProp name="Authorization" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">Bearer eyJraWQiOiJRaU9JT0llb2g3MDQtRUVyeVpCV0dwbTNtOThTOTQ4X0UyWUlOZzFRSGs4IiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVDejlnV1pXTTZJZDFQUER0Q2RDekxmR0VGekN0YXFUYjJiUGNpQ0I5ZHciLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYyMTQwOTAwMCwiZXhwIjoxNjIxNDk1NDAwLCJjaWQiOiIwb2F5Mm5ta3U5aFhUWmVuRjBoNyIsInVpZCI6IjAwdW5xM3IydTJseUdrbDFrMGg3Iiwic2NwIjpbIkFQSV9URVNUIl0sInN1YiI6ImtkdGVzdDFAZGhzLkFsbGVnaGVueS5Mb2NhbCIsImFkU2FtQWNjb3VudE5hbWUiOiJLRFRFU1QxIn0.hYLejzdpfNi_wjhiHsSXJWMh79iGILM4udDfNeELFDZzp3oF4xZIH69TX7eTmKu_Up_vyiAx_iavYUfuqYQZrRwEWhDs2HWI--Rllhs4FVlKhxyKt7RURYjv59aY3QCF733IC2jbzVV2w4c7I6hCtmQ4TiSd-sBfuAEAe7G7sK8mxI9FdspZyEX769uXWoyJdH6Fh65S14lBX-6Sar-s9FxTaLLQnYjyWmvCybDcfCramzzBqH8aLKxS1_yr4bQ3lmaPeszF70j1zFTlh1dLJKPE0RS3Bu3dt9Pv48I1PllDTWT0VTRCWXw3k4-o1PKy5B7aDesxBbMdI7auU7cyiA</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">PostmanRuntime/7.26.8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Postman-Token" elementType="Header">
+                <stringProp name="Header.name">Postman-Token</stringProp>
+                <stringProp name="Header.value">fbe8a11c-f406-467e-8116-1908a028f4f8</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">dhsaz-apim-api-dev.azure-api.net</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">keep-alive</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">113</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">20000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion - Clearance" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="777709088">rrorObject reference not</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message">errorObject reference not</stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
