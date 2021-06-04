@@ -8,6 +8,7 @@ ROOTPATH=$1
 
 echo "$ROOTPATH"
 # Finally run
-docker stop $NAME > /dev/null 2>&1
-docker rm $NAME > /dev/null 2>&1
-docker run --name $NAME -i -v $ROOTPATH:/test -w /test $IMAGE ${@:2}
+#docker stop $NAME > /dev/null 2>&1
+#docker rm $NAME > /dev/null 2>&1
+#docker run --name $NAME -i -v $ROOTPATH:/test -w /test $IMAGE ${@:2}
+docker run --rm --name ${NAME} -i -v ${PWD}:${PWD} -w ${PWD} ${IMAGE} $@
