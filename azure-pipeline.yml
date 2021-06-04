@@ -1,5 +1,6 @@
 variables:
   host: dhsaz-apim-api-dev.azure-api.net
+
 jobs:
 - job: jmeter
   pool:
@@ -14,3 +15,8 @@ jobs:
       arguments: '$PWD CartTest.jmx $(host)'
       workingDirectory: jmeter
       failOnStderr: true
+  - task: PublishPipelineArtifact@1
+    displayName: Publish JMeter Report
+    inputs:
+      targetPath: jmeter/report
+      artifact: jmeter
