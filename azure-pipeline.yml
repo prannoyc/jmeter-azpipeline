@@ -6,7 +6,7 @@ jobs:
   pool:
     name: Default
     demands:
-    -Agent.Name equals W10USI170354
+    - Agent.Name equals W10USI170354
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
