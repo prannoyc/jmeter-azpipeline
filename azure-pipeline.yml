@@ -1,4 +1,3 @@
-
 variables:
   host: dhsaz-apim-api-dev.azure-api.net
 
@@ -6,8 +5,8 @@ jobs:
 - job: jmeter
   pool:
     name: Default
-	demands:
-	-Agent.Name equals W10USI170354
+    demands:
+    -Agent.Name equals W10USI170354
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
