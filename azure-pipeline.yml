@@ -1,6 +1,6 @@
 jobs:
 - job: jmeter
-  pool: Default
+  pool:
     vmImage: ubuntu-latest
   displayName: Run JMeter tests
   steps:
@@ -11,7 +11,7 @@ jobs:
       filePath: 'jmeter/test.sh'
       arguments: '$PWD CartTest.jmx $(host)'
       workingDirectory: jmeter
-      failOnStderr: false
+      failOnStderr: true
   - task: PublishPipelineArtifact@1
     displayName: Publish JMeter Report
     inputs:
