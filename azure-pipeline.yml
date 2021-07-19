@@ -1,6 +1,6 @@
 jobs:
 - job: jmeter
-   pool: Default
+   pool: default
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
