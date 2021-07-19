@@ -1,3 +1,6 @@
+variables:
+  agent.preferPowerShellOnContainers = true
+  
 jobs:
 - job: jmeter
   pool: Default
