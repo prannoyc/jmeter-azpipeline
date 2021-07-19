@@ -1,6 +1,10 @@
+pool: 
+   name: Default
+   demands:
+    - agent.name -equals W10USI170354
+
 jobs:
 - job: jmeter
-  pool: Default
     vmImage: ubuntu-latest
   displayName: Run JMeter tests
   steps:
