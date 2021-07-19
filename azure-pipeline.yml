@@ -2,7 +2,7 @@ jobs:
 - job: jmeter
   pool: 
   name: Default
-    vmImage: ubuntu-latest
+    vmImage:ubuntu-latest
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
