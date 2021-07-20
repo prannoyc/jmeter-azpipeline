@@ -22,8 +22,6 @@ steps:
   env:
     MY_FLOOD_TOKEN: $(flood_api_token)
  
-
-
 - task: PublishPipelineArtifact@1
   displayName: Publish JMeter Report
   inputs:
