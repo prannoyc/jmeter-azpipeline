@@ -1,7 +1,13 @@
+variables:
+  host: dhsaz-apim-api-dev.azure-api.net
+
 jobs:
 - job: jmeter
-  pool: Default
-  vmImage: ubuntu-latest
+  pool:
+    name: Default
+    demands:
+    - 'Agent.Name -equals W10USI170354'
+    vmImage: ubuntu-latest
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
