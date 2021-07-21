@@ -4,9 +4,6 @@ variables:
 jobs:
 - job: jmeter
   pool:
-    name: Default
-    demands:
-    - 'Agent.Name -equals W10USI170354'
     vmImage: ubuntu-latest
   displayName: Run JMeter tests
   steps:
