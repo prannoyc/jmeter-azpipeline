@@ -18,6 +18,8 @@ jobs:
       arguments: '$PWD CartTest.jmx $(host)'
       workingDirectory: jmeter
       failOnStderr: true
+      noProfile: true
+      noRc: true
   - task: PublishPipelineArtifact@1
     displayName: Publish JMeter Report
     inputs:
