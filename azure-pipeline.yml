@@ -1,21 +1,25 @@
-trigger:
-- master
-pool:
+variables:
+  host: dhsaz-apim-api-dev.azure-api.net
+
+jobs:
+- job: jmeter
+  pool:
     name: Default
+    demands:
+    - 'Agent.Name -equals W10USI170354'
     vmImage: ubuntu-latest
-    displayName: Run JMeter tests
-steps:
-- script: echo 'Lets run a test on Azure!' 
-- task: ShellScript@2
-  inputs:
-    scriptPath: 'jmeter/test.sh'
-    arguments: '$PWD CartTest.jmx $(host)'
-    workingDirectory: jmeter
-    failOnStderr: false
-  displayName: Running'
-  
-- task: PublishPipelineArtifact@1
-  displayName: Publish JMeter Report
-  inputs:
-    scriptPath: jmeter/report
-    artifact: jmeter
+  displayName: Run JMeter tests
+  steps:
+  - task: Bash@3
+    displayName: Execute JMeter tests
+    inputs:
+      targetType: filePath
+      filePath: 'jmeter/test.sh'
+      arguments: '$PWD CartTest.jmx $(host)'
+      workingDirectory: jmeter
+      failOnStderr: false
+  - task: PublishPipelineArtifact@1
+    displayName: Publish JMeter Report
+    inputs:
+      targetPath: jmeter/report
+      artifact: jmeter
