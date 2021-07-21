@@ -4,6 +4,7 @@ variables:
 jobs:
 - job: jmeter
   pool:
+  name: Default
     vmImage: ubuntu-latest
   displayName: Run JMeter tests
   steps:
