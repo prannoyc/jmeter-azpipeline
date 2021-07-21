@@ -1,9 +1,9 @@
 jobs:
 - job: jmeter
-  pool: 
-  name: Default
-  demands:
-    - 'Agent.Name -equals W10USI170354'
+  pool:
+    name: Default
+    demands:
+    - 'Agent.Name -equals W10USI170328'
   displayName: Run JMeter tests
   steps:
   - task: Bash@3
