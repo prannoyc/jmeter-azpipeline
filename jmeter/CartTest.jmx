@@ -27,7 +27,7 @@
           </elementProp>
           <elementProp name="Authorization" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
-            <stringProp name="Header.value">Bearer eyJraWQiOiI2Y3ktNDVJb3p5OUZNcXgtUHotSlQwc3RoUDY3VVpzbWttMkFfLXYydzRNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULmtGa1plWXlfRE1DREpKUDhCTlpDWXN2UkFPZ2FxRVFFdmlJdGJqUVI0T1EiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYzNzMwNjMyMSwiZXhwIjoxNjM3MzkyNzIxLCJjaWQiOiIwb2ExMXluNnAzNXNSYjBnRDBoOCIsInNjcCI6WyJLSURTX0NPTlRBQ1RTIl0sInN1YiI6IjBvYTExeW42cDM1c1JiMGdEMGg4IiwiYWRTYW1BY2NvdW50TmFtZSI6IiJ9.IXcH3uei1X5JCOS0K5bvvbh_T0fJmIWD07K8p3vbUMDFlsZX33Unx-9rFH_SX_Ru9p2WvNV4FkMmKCDbJn6--xNkV31L2vzxIZ3vU6n_LjIwRxWkyzupzHLWduNRz4mr5Bzrlb4_yvUufxkF9KgTUJZqLZgp06tKHMIb8XFbv91WIJMhEx0NvbNBny2JnnfbKzkUlEs_hCWsh8aQm8WjKo-IqpoSHnfT0Fwqh6gRSnxCHMAyPlpzz0DkTvmrY9Sn_vLsv8npfl8NNZhP2YNW98I4rZlxkZWkZPMfi4PN_kFMJ_bzCzoaJuCD004FodY7ND-L_orGYy3gG7hqCxjXVA</stringProp>
+            <stringProp name="Header.value">Bearer eyJraWQiOiI2Y3ktNDVJb3p5OUZNcXgtUHotSlQwc3RoUDY3VVpzbWttMkFfLXYydzRNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnNBOHZyVlplREhoOGhVZmZpSXQydjJsZTVVb1FkSm9mTEZJdk9PeHN4dWsiLCJpc3MiOiJodHRwczovL2FsbGVnaGVueWNvdW50eS1kZW1vLm9rdGFwcmV2aWV3LmNvbS9vYXV0aDIvYXVzbjRuNzZ6cXZlbEhhUGIwaDciLCJhdWQiOiJESFMgT0lEQyBEZXYgQXBwcyIsImlhdCI6MTYzNzU4Mzk1NiwiZXhwIjoxNjM3NjcwMzU2LCJjaWQiOiIwb2ExMXluNnAzNXNSYjBnRDBoOCIsInNjcCI6WyJLSURTX0NPTlRBQ1RTIl0sInN1YiI6IjBvYTExeW42cDM1c1JiMGdEMGg4IiwiYWRTYW1BY2NvdW50TmFtZSI6IiJ9.fnklmDhEm7kO7jvTIMaJUAsnc0EwYrght22WbUX0wB7CZoZuf_vZ3yxmsqpSmE-ydCZC3bWYnvPBa3G7YKgatzstWNir0p6nyiDNQqDKzgQXtBhWhCNv5EgiRCb-6U9XLGvF6PTkwJ_napPRZrIimR9o1OTTftJez1cSjK5hdbahk-P4zOOk_spN8kkBy_4uU5hhuBhXPm-NGHo46odZ1pgGwb4HaMSaRS4cYHVw7Pyn9lv9yDhhkvM_MwNdS0IIw6By0FsD2BxLcZPM2xGx6aCUpgKYFXDMJPY-bWxdCTbwv2qfIjcMdsWMKEGpVHCfIrqc1jRH4MeBc3qhgelh_w</stringProp>
           </elementProp>
           <elementProp name="User-Agent" elementType="Header">
             <stringProp name="Header.name">User-Agent</stringProp>
@@ -93,7 +93,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.num_threads">40</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">0</stringProp>
